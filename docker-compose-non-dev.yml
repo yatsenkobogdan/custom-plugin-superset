@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-x-superset-image: &superset-image apachesuperset.docker.scarf.sh/apache/superset:${TAG:-latest}
+x-superset-image: &superset-image bio1.grid.kiae.ru/custom-superset-image:latest
 x-superset-depends-on: &superset-depends-on
   - db
   - redis
@@ -23,7 +23,7 @@ x-superset-volumes:
   - ./docker:/app/docker
   - superset_home:/app/superset_home
 
-version: "3.7"
+version: "3.7"  
 services:
   redis:
     image: redis:7

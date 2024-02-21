@@ -89,6 +89,7 @@ class CeleryConfig:
         },
     }
 
+TALISMAN_ENABLED = False
 
 CELERY_CONFIG = CeleryConfig
 
